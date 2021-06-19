@@ -14,14 +14,17 @@ django-admin startproject umfrageseite
 # cd portfolio-project
 source ../env/bin/activate
 python manage.py runserver
-# python manage.py migrate
 
 # create app
-python manage.py startapp polls
+python manage.py startapp polls 
 
-# datenbank restrukturieren
+# restrucurize data base
 python3 manage.py makemigrations
+python manage.py migrate
 
 python3 manage.py createsuperuser
 
 python manage.py shell
+
+git add -A
+git commit -m "Add apps"
