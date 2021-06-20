@@ -1,30 +1,31 @@
-# Virtual environment einrichten
+# create virtual environment
 python3 -m venv env
 
-# Virtual environment aktivieren
-source env/bin/activate
+# activate virtual environment 
+source ../env/bin/activate
 
-# Django installieren
+# install Django 
 pip install django
 
-# Django projekt start
-django-admin startproject umfrageseite
+# Django create project
+django-admin startproject <projectname>
 
-# run server
-# cd portfolio-project
+# run python server
 source ../env/bin/activate
 python manage.py runserver
 
-# create app
-python manage.py startapp polls 
+# create python app
+python manage.py startapp <appname>
 
-# restrucurize data base
+# restrucurize python data base
 python3 manage.py makemigrations
 python manage.py migrate
 
+# create python data base admin
 python3 manage.py createsuperuser
 
 python manage.py shell
 
+# git version updates
 git add -A
 git commit -m "Add apps"
