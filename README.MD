@@ -28,4 +28,4 @@ python manage.py shell
 
 # git version updates
 git add -A
-git commit -m "Add apps"
+git commit -m "Lection 40 Bootstrap"
